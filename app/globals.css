@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --eqdc-blue: #003366;
+  --eqdc-light-blue: #0066cc;
+  --eqdc-gray: #f8f9fa;
+  --eqdc-dark-gray: #6c757d;
+}
+
+body {
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+.eqdc-primary {
+  background-color: var(--eqdc-blue);
+}
+
+.eqdc-secondary {
+  background-color: var(--eqdc-gray);
+}
+
+.form-card {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.form-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 51, 102, 0.15);
+  border-color: var(--eqdc-light-blue);
+}
+
+.govt-header {
+  background: linear-gradient(135deg, var(--eqdc-blue) 0%, var(--eqdc-light-blue) 100%);
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
